@@ -13,6 +13,7 @@
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
+  <theme themeIsDefault="false" themeIsSDK="true" themeLocation="${SDK_THEMES_DIR}/frameworks/themes/AeonGraphical"/>
   <applications>
     <application path="CAC.mxml"/>
   </applications>

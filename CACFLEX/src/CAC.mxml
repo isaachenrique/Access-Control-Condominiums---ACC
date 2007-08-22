@@ -5,12 +5,25 @@
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	<mx:LinkBar x="0" y="0" width="100%" height="38" dataProvider="{viewstack1}">
-	</mx:LinkBar>
-	<mx:ViewStack id="viewstack1" x="200" y="200" width="532" height="200">
-		<s:NavigatorContent width="100%" height="100%" label="View 1">
-		</s:NavigatorContent>
-		<s:NavigatorContent width="100%" height="100%" label="Condominos">
-		</s:NavigatorContent>
-	</mx:ViewStack>
+	<s:VGroup x="0" y="0" width="100%" height="100%">
+		<s:BorderContainer width="100%" height="100%">
+			<s:backgroundFill>
+				<s:LinearGradient rotation="90">
+					<s:GradientEntry color="0XFFFFFF"/>
+					<s:GradientEntry color="0x4863A0"/>
+				</s:LinearGradient>
+			</s:backgroundFill>
+			<s:HGroup x="0" y="0" width="100%" height="40">
+				<s:BorderContainer width="100%" height="100%">
+					<s:backgroundFill>
+						<s:LinearGradient rotation="90">
+							<s:GradientEntry color="0x4863A0"/>
+							<s:GradientEntry color="0XFFFFFF"/>
+						</s:LinearGradient>
+					</s:backgroundFill>
+				</s:BorderContainer>
+			</s:HGroup>
+		</s:BorderContainer>
+	</s:VGroup>
+	
 </s:Application>
