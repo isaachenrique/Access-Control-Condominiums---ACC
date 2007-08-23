@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()">
+<mx:Script>
+	<![CDATA[
+		import flash.utils.Timer;
+        import flash.events.TimerEvent;
+		[Bindable]
+			public var formatString:String;
+		[Bindable]
+			public var curTime:String;
+		public function init():void { 
+			curTime=format.format(new Date()).toString();
+            var myTimer:Timer = new Timer(1000, 0);
+            myTimer.addEventListener("timer", timeHandle);
+            myTimer.start();
+        }
+        
+        public function timeHandle(event:TimerEvent):void { 
+            curTime=format.format(new Date()).toString();
+        }
+	]]>
+</mx:Script>
+	<mx:Label id="lbltime" text="{curTime}" />
+	<mx:DateFormatter formatString="{formatString}" id="format"/>
+</mx:Canvas>
